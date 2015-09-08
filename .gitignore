@@ -1,3 +1,7 @@
+## Project specific ignores
+zsh/zsh_profile
+
+## OS X ignore files
 .DS_Store
 Thumbs.db
 *~
@@ -13,6 +17,7 @@ Icon
 .Spotlight-V100
 .Trashes
 
+## Linux ignore files
 # project-specific vim configurations
 .vimrc.local
 
