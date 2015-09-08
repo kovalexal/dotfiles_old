@@ -1,9 +1,9 @@
 #====================================================
 # Variables
 #====================================================
-export DOTFILES=$HOME/.dotfiles
-export TERM=xterm-256color
-BASE16_SHELL=$DOTFILES/config/base16-shell/base16-default.dark.sh
+export DOTFILES="$HOME/.dotfiles"
+export TERM="xterm-256color"
+BASE16_SHELL="$DOTFILES/config/base16-shell/base16-default.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 #====================================================
@@ -21,7 +21,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
     alias repair_camera="sudo killall VDCAssistant"
     alias show_dot_files="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
     alias hide_dot_files="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
-else
+fi
 
 #====================================================
 # Functions
