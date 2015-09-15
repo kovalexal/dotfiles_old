@@ -19,7 +19,7 @@ alias pip3_upgrade_packages="pip3 install --upgrade pip; pip3 freeze --local | g
 
 if [[ "$(uname)" == "Darwin" ]]; then
     alias bubu="brew update && brew upgrade --all && brew cleanup"
-    alias bu="brew update && brew upgrade --all"
+    alias bu="brew update"
     alias spotlight-reindex="sudo mdutil -E /"
     alias repair_camera="sudo killall VDCAssistant"
     alias show_dot_files="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
