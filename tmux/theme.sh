@@ -13,7 +13,7 @@ set-window-option -g status-left " #S "
 set-window-option -g status-left-fg black
 set-window-option -g status-left-bg white
 
-set-window-option -g status-right " %H:%M %d-%b-%y #[fg=colour19,bold]#h "
+set-window-option -g status-right " \"#[fg=colour19,bold]#h\" %d-%b-%y %H:%M "
 set-window-option -g status-right-fg black
 set-window-option -g status-right-bg white
 
