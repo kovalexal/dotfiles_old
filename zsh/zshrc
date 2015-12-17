@@ -49,14 +49,14 @@ ZSH_THEME="dpoggi"
 # Add wisely, as too many plugins slow down shell startup.
 
 if [[ "$(uname)" == "Darwin" ]]; then
-    plugins=(git tmux python history-substring-search rsync colored-man common-aliases osx brew brew-cask)
+    plugins=(git tmux python history-substring-search rsync colored-man-pages common-aliases sublime osx brew brew-cask)
 else
-    plugins=(git tmux python history-substring-search rsync colored-man common-aliases)
+    plugins=(git tmux python history-substring-search rsync colored-man-pages common-aliases sublime)
 fi
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
