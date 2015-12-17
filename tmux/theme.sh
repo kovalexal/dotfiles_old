@@ -2,6 +2,8 @@
 # Theme
 #====================================================
 
+tm_battery="#(~/.dotfiles/bin/battery_indicator.sh)"
+
 set-window-option -g status-bg black
 set-window-option -g status-fg white
 
@@ -13,7 +15,7 @@ set-window-option -g status-left " #S "
 set-window-option -g status-left-fg black
 set-window-option -g status-left-bg white
 
-set-window-option -g status-right " \"#[fg=colour19,bold]#h\" %d-%b-%y %H:%M "
+set-window-option -g status-right " \"#[fg=colour19,bold]#h\" %d-%b-%y %H:%M $tm_battery"
 set-window-option -g status-right-fg black
 set-window-option -g status-right-bg white
 
