@@ -1,19 +1,37 @@
-" Vundle initialization
-set nocompatible              " be iMproved, required
-filetype off                  " required
+"""""""""""""""""""""""""""""""""""""""""""
+" ==> General & Fixes
+"""""""""""""""""""""""""""""""""""""""""""
+source ~/.vim/plugins.vim " load plugins from Vundle
+set nocompatible " be iMproved, required
+:map Q <Nop> " disable visual mode
+set backspace=indent,eol,start " fix backspace behaviour
+set clipboard=unnamed " Copy to system clipboard
+set autoread " reread file when changed
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
 
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-" Airline plugin
-Plugin 'bling/vim-airline'
+"""""""""""""""""""""""""""""""""""""""""""
+" ==> View
+"""""""""""""""""""""""""""""""""""""""""""
+syntax on " enable syntax highlighting
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" Airline appear always
+" make Airline appear always
 set laststatus=2
 let g:airline_powerline_fonts = 1
+
+set noshowmode " don`t show mode
+set number " line nubmers
+
+
+"""""""""""""""""""""""""""""""""""""""""""
+" ==> Manipulation
+"""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-e> 3<C-e> " scroll down faster
+nnoremap <C-y> 3<C-y> " scroll up faster
+map <C-n> :NERDTreeToggle<CR> " toogle NERDTree with Ctrl+N
+
+
+"""""""""""""""""""""""""""""""""""""""""""
+" ==> Sound
+"""""""""""""""""""""""""""""""""""""""""""
+set noerrorbells
+set visualbell
