@@ -3,6 +3,8 @@ zsh/zsh_profile
 
 ## Vim ignores
 vim/vim/.netrwhist
+vim/vim/bundle/*
+!vim/vim/bundle/Vundle.vim
 
 ## OS X ignore files
 .DS_Store
