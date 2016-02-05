@@ -38,9 +38,11 @@ if [[ "$(uname)" == "Darwin" ]]; then
 
     export ANDROID_HOME=/usr/local/opt/android-sdk
 
+    export LATEX_HOME=/usr/local/texlive/2015/bin/x86_64-darwin
+
     export INTEL_HOME=/opt/intel
 
-    export PATH=$PATH:$INTEL_HOME/bin:$SPARK_HOME/bin
+    export PATH=$PATH:$INTEL_HOME/bin:$SPARK_HOME/bin:$LATEX_HOME
 fi
 
 #====================================================
