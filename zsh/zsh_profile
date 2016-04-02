@@ -43,6 +43,9 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export INTEL_HOME=/opt/intel
 
     export PATH=$PATH:$INTEL_HOME/bin:$SPARK_HOME/bin:$LATEX_HOME
+
+    export MONO_GAC_PREFIX="/usr/local"
+
 fi
 
 #====================================================
